@@ -20,7 +20,7 @@ public class Controller {
                return messageList;
            }
        }
-       return messageList;
+       throw new RuntimeException("Message with id " + id + "not found!");
    }
 
    @GetMapping("/messages")
